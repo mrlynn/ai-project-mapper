@@ -1,4 +1,3 @@
-# .github/workflows/documentation.yml
 name: Deploy Documentation
 
 on:
@@ -14,30 +13,37 @@ permissions:
   contents: write
 
 jobs:
-  build-and-deploy:
+  deploy:
+    name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: docs
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: 18
           cache: 'npm'
+          cache-dependency-path: docs/package-lock.json
 
       - name: Install dependencies
         run: |
-          cd docs
           npm ci
 
-      - name: Build documentation
+      - name: Build website
         run: |
-          cd docs
           npm run build
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Add .nojekyll file
+        run: |
+          touch ./build/.nojekyll
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          folder: docs/build
-          branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/build
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com

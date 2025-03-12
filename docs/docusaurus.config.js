@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Project Mapper',
+  title: 'AI Project Mapper',
   tagline: 'Generate LLM-friendly project summaries to help AI assistants understand your codebase',
   favicon: 'img/favicon.ico',
 
