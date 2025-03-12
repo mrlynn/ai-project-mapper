@@ -4,7 +4,7 @@
 
 Generate LLM-friendly project summaries to help AI assistants understand your codebase.
 
-[![npm version](https://img.shields.io/badge/npm-v0.1.0-blue.svg)](https://www.npmjs.com/package/project-mapper)
+[![npm version](https://img.shields.io/npm/v/project-mapper.svg)](https://www.npmjs.com/package/project-mapper)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen.svg)](https://nodejs.org/)
 [![Documentation](https://img.shields.io/badge/docs-online-informational.svg)](https://mrlynn.github.io/ai-project-mapper)
