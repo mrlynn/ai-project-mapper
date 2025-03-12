@@ -1,6 +1,6 @@
 {
   "name": "project-mapper",
-  "version": "0.7.0",
+  "version": "1.0.0",
   "description": "Generate LLM-friendly project summaries to help AI assistants understand your codebase",
   "type": "module",
   "main": "src/index.js",
