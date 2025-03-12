@@ -2,6 +2,10 @@
 
 import path from 'path';
 import fs from 'fs-extra';
+import { readFileSync } from 'fs';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
 import { program } from 'commander';
 import chalk from 'chalk';
 import ora from 'ora';
@@ -9,11 +13,18 @@ import { analyzeProject } from './analyzer.js';
 import { enhancedKnowledgeTransfer, generateContextQuestionnaire } from './knowledge-transfer-enhanced.js';
 import { analyzeProjectSemantics } from './semantic-analyzer.js';
 
+// Get the path to package.json
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const packageJson = JSON.parse(
+  readFileSync(join(__dirname, '..', 'package.json'), 'utf8')
+);
+
 // Configure the CLI
 program
   .name('project-mapper')
   .description('Generate LLM-friendly project summaries with semantic analysis')
-  .version('0.2.0')
+  .version(packageJson.version)
   .argument('[directory]', 'project directory to analyze', '.')
   .option('-o, --output <file>', 'output file path', 'project-knowledge-transfer.md')
   .option('-i, --ignore <patterns...>', 'additional glob patterns to ignore')
