@@ -1,4 +1,4 @@
-# Project Mapper
+# AI Project Mapper
 
 ![Project Mapper Banner](https://img.shields.io/badge/Project%20Mapper-LLM--Friendly%20Code%20Analysis-blue)
 
@@ -10,7 +10,7 @@ Generate LLM-friendly project summaries to help AI assistants understand your co
 
 ## Overview
 
-Project Mapper analyzes your codebase and creates a comprehensive knowledge transfer document optimized for Large Language Models (LLMs). This enables AI assistants to quickly understand your project's architecture, components, and patterns, providing more accurate and contextual assistance.
+AI Project Mapper analyzes your codebase and creates a comprehensive knowledge transfer document optimized for Large Language Models (LLMs). This enables AI assistants to quickly understand your project's architecture, components, and patterns, providing more accurate and contextual assistance.
 
 ### Why Project Mapper?
 
