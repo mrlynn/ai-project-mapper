@@ -322,4 +322,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ⭐ If you find this tool helpful, please consider giving it a star on GitHub!
 
-[Report issues](https://github.com/yourusername/project-mapper/issues) | [Request features](https://github.com/yourusername/project-mapper/issues/new?labels=enhancement)# ai-project-mapper
+[Report issues](https://github.com/yourusername/project-mapper/issues) | [Request features](https://github.com/yourusername/project-mapper/issues/new?labels=enhancement)

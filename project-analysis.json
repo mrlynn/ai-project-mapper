@@ -2,13 +2,14 @@
   "overview": {
     "name": "project-mapper",
     "description": "Generate LLM-friendly project summaries to help AI assistants understand your codebase",
-    "version": "0.2.0",
-    "totalFiles": 24,
-    "totalDirectories": 4,
+    "version": "0.3.0",
+    "totalFiles": 25,
+    "totalDirectories": 5,
     "filesByType": {
       "javascript": [
         "debug-cli.js",
         "memory-wrapper.js",
+        "bin/project-mapper.js",
         "src/analyzer.js",
         "src/cli.js",
         "src/index.js",
@@ -16,7 +17,7 @@
         "src/knowledge-transfer.js",
         "src/semantic-analyzer.js",
         "src/visualization.js",
-        "bin/project-mapper.js"
+        "scripts/visualization-script.js"
       ],
       "typescript": [],
       "html": [],
@@ -80,7 +81,7 @@
     },
     "scripts": {
       "start": "node --max-old-space-size=8192 src/cli.js",
-      "test": "node --test test/**/*.{test.js,test.cjs}",
+      "test": "node --test",
       "prepare": "mkdir -p bin && chmod +x src/cli.js bin/project-mapper.js",
       "prepublishOnly": "npm test"
     },
@@ -146,6 +147,10 @@
         "score": 5.22
       },
       {
+        "path": "scripts/visualization-script.js",
+        "score": 2.52
+      },
+      {
         "path": "memory-wrapper.js",
         "score": 1.04
       }
@@ -161,6 +166,10 @@
         "importedBy": []
       },
       "memory-wrapper.js": {
+        "imports": [],
+        "importedBy": []
+      },
+      "bin/project-mapper.js": {
         "imports": [],
         "importedBy": []
       },
@@ -217,7 +226,7 @@
         "imports": [],
         "importedBy": []
       },
-      "bin/project-mapper.js": {
+      "scripts/visualization-script.js": {
         "imports": [],
         "importedBy": []
       }
@@ -296,14 +305,14 @@
       "knowledge-transfer",
       "extract",
       "semantics",
+      "visualization",
       "mermaid",
       "semantic",
-      "analyzer",
-      "format"
+      "analyzer"
     ]
   },
   "fileStats": {
-    "totalSize": 404980,
+    "totalSize": 407781,
     "largestFiles": [
       {
         "path": "codebase.md",
@@ -331,7 +340,7 @@
       },
       {
         "path": "README.md",
-        "size": 10991
+        "size": 10978
       },
       {
         "path": "src/knowledge-transfer-enhanced.js",
@@ -349,7 +358,7 @@
     "extensionCounts": {
       "no-extension": 3,
       ".md": 6,
-      ".js": 10,
+      ".js": 11,
       ".json": 2,
       ".tgz": 1,
       ".sh": 1,
@@ -358,15 +367,15 @@
     "languages": {
       "Markdown": {
         "files": 6,
-        "size": 212754
+        "size": 214721
       },
       "JavaScript": {
-        "files": 10,
-        "size": 135779
+        "files": 11,
+        "size": 136642
       },
       "JSON": {
         "files": 2,
-        "size": 11224
+        "size": 11195
       },
       "Shell": {
         "files": 1,
@@ -381,11 +390,11 @@
   "documentation": [
     {
       "path": "README.md",
-      "size": 10989,
+      "size": 10976,
       "headings": [
         {
           "level": 1,
-          "text": "Project Mapper"
+          "text": "AI Project Mapper"
         },
         {
           "level": 2,
@@ -424,7 +433,7 @@
           "text": "3. Share the generated document with your LLM"
         }
       ],
-      "preview": "# Project Mapper\n\n![Project Mapper Banner](https://img.shields.io/badge/Project%20Mapper-LLM--Friendly%20Code%20Analysis-blue)\n\nGenerate LLM-friendly project summaries to help AI assistants understand your codebase.\n\n[![npm version](https://img.shields.io/badge/npm-v0.1.0-blue.svg)](https://www.npmjs.com/package/project-mapper)\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n[![Node.js Version](https://img.shields.io/badge/node-%3E%3D16"
+      "preview": "# AI Project Mapper\n\n![Project Mapper Banner](https://img.shields.io/badge/Project%20Mapper-LLM--Friendly%20Code%20Analysis-blue)\n\nGenerate LLM-friendly project summaries to help AI assistants understand your codebase.\n\n[![npm version](https://img.shields.io/badge/npm-v0.1.0-blue.svg)](https://www.npmjs.com/package/project-mapper)\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n[![Node.js Version](https://img.shields.io/badge/node-%3E%3"
     }
   ]
 }

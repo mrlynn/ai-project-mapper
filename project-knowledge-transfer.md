@@ -52,7 +52,7 @@
    - Defined in package.json
 
 2. **test Script**
-   - Function: `node --test test/**/*.{test.js,test.cjs}`
+   - Function: `node --test`
    - Runs the test suite
    - Defined in package.json
 
@@ -65,7 +65,7 @@
 
 The project includes code in the following languages:
 
-- **JavaScript**: 10 files (34% of codebase)
+- **JavaScript**: 11 files (34% of codebase)
 - **Markdown**: 6 files (53% of codebase)
 - **JSON**: 2 files (3% of codebase)
 - **Shell**: 1 files (0% of codebase)
@@ -122,8 +122,8 @@ The project includes code in the following languages:
 - **Code-analysis:** A key concept in this project
 - **Extract:** A key concept in this project
 - **Semantics:** A key concept in this project, related to semantic
+- **Visualization:** A key concept in this project
 - **Mermaid:** A key concept in this project
-- **Format:** A key concept in this project
 
 ### Key Assumptions
 
@@ -161,9 +161,9 @@ The codebase revolves around these primary concepts and their relationships:
 
 - **const**: related to analysis, file
 - **analysis**: related to project, edge
-- **file**: related to str, s s
+- **file**: related to project, int
 - **content**: related to analysis, project
-- **project**: related to analysis, edge
+- **project**: related to analysis, file
 - **name**: related to project, path
 - **path**: related to dir, s w
 
@@ -175,28 +175,28 @@ These terms have specific meanings in the project context:
         ];
 
         const patterns = [
-            '* (related to: analysis, file, project, files, term)
-- **analysis:** Get analysis results (related to: project, edge, ext, knowledge, transfer)
-- **file:** Important files (related to: str, s s, project, base, int)
-- **content:** Check README content (related to: analysis, project, ext, document, term)
-- **project:** Clean up test project (related to: analysis, edge, ext, base, min)
+            '* (related to: analysis, file, project, files, dir)
+- **analysis:** Get analysis results (related to: project, edge, ext, file, document)
+- **file:** Important files (related to: project, int, s s, analysis, base)
+- **content:** Check README content (related to: analysis, project, ext, document, edge)
+- **project:** Clean up test project (related to: analysis, file, edge, ext, base)
 - **name:** Add class names (related to: project, path, dir, s w, e e)
 - **path:** Determine paths (related to: dir, s w, e e, file, project)
-- **test:** Check for testing (related to: analysis, project, edge, project s, concept)
+- **test:** Check for testing (related to: analysis, project, document, edge, doc)
 
 ### Conceptual Distribution
 
 Key concepts are distributed across the codebase as follows:
 
-- **project** appears in 18 files, including:
+- **project** appears in 19 files, including:
   - `CHANGELOG.md`
   - `README.md`
-  - *(and 16 more)*
-- **analysis** appears in 16 files, including:
+  - *(and 17 more)*
+- **analysis** appears in 17 files, including:
   - `CHANGELOG.md`
   - `README.md`
-  - *(and 14 more)*
-- **file** appears in 15 files, including:
+  - *(and 15 more)*
+- **file** appears in 16 files, including:
   - `CHANGELOG.md`
   - `LICENSE.md`
-  - *(and 13 more)*
+  - *(and 14 more)*
