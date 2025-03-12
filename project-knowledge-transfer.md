@@ -14,19 +14,47 @@
 
 ### Major Components
 
-1. **Core Library** - Contains the main functionality and business logic
-   - Located in `src`
-   - Responsibilities:
-     - Implement core algorithms
-     - Process data
-     - Provide main API
-
-2. **Entry Point** - Main application entry point that initializes the system
+1. **Entry Point** - Main application entry point that initializes the system
    - Located in `src/index.js`
    - Responsibilities:
      - Initialize the application
      - Handle startup logic
      - Coordinate other components
+
+2. **Docs Build Assets Js Module** - Handles docs/build/assets/js functionality
+   - Located in `docs/build/assets/js`
+   - Responsibilities:
+     - Implement docs/build/assets/js features
+
+3. **Src Module** - Handles src functionality
+   - Located in `src`
+   - Responsibilities:
+     - Implement src features
+
+4. **Docs .docusaurus Module** - Handles docs/.docusaurus functionality
+   - Located in `docs/.docusaurus`
+   - Responsibilities:
+     - Implement docs/.docusaurus features
+
+5. **Docs Module** - Handles docs functionality
+   - Located in `docs`
+   - Responsibilities:
+     - Implement docs features
+
+6. **Docs Node_modules Acorn-jsx Module** - Handles docs/node_modules/acorn-jsx functionality
+   - Located in `docs/node_modules/acorn-jsx`
+   - Responsibilities:
+     - Implement docs/node_modules/acorn-jsx features
+
+7. **Docs Node_modules Algoliasearch Module** - Handles docs/node_modules/algoliasearch functionality
+   - Located in `docs/node_modules/algoliasearch`
+   - Responsibilities:
+     - Implement docs/node_modules/algoliasearch features
+
+8. **Docs Node_modules Big.js Module** - Handles docs/node_modules/big.js functionality
+   - Located in `docs/node_modules/big.js`
+   - Responsibilities:
+     - Implement docs/node_modules/big.js features
 
 ### Control Flow
 
@@ -39,8 +67,9 @@
 
 - **ES Modules:** Uses ES module system for code organization and dependency management
 - **Functional Approach:** Primarily uses functions and composition rather than classes
-- **Modular Architecture:** Organizes code into focused, single-purpose modules
-- **Pipeline Architecture:** Processes data through sequential stages of transformation
+- **Factory Pattern:** Uses factory functions to create objects or components
+- **Repository Pattern:** Abstracts data access logic through repositories
+- **Service Pattern:** Encapsulates business logic in service modules
 
 ## Core Functionality
 
@@ -65,11 +94,18 @@
 
 The project includes code in the following languages:
 
-- **JavaScript**: 11 files (34% of codebase)
-- **Markdown**: 6 files (53% of codebase)
-- **JSON**: 2 files (3% of codebase)
-- **Shell**: 1 files (0% of codebase)
-- **YAML**: 1 files (0% of codebase)
+- **JavaScript**: 18325 files (33% of codebase)
+- **TypeScript**: 4006 files (8% of codebase)
+- **JSON**: 1815 files (7% of codebase)
+- **Markdown**: 1747 files (4% of codebase)
+- **TypeScript (React)**: 225 files (0% of codebase)
+- **CSS**: 191 files (0% of codebase)
+- **YAML**: 127 files (0% of codebase)
+- **HTML**: 34 files (0% of codebase)
+- **JavaScript (React)**: 8 files (0% of codebase)
+- **XML**: 4 files (0% of codebase)
+- **Shell**: 2 files (0% of codebase)
+- **SCSS**: 1 files (0% of codebase)
 
 ## Integration Points
 
@@ -110,7 +146,7 @@ The project includes code in the following languages:
 
 - **Generate:** A key concept in this project
 - **Concept:** A key concept in this project
-- **Analyze:** A key concept in this project, related to analyzer
+- **Analyze:** A key concept in this project
 - **Project:** A key concept in this project, related to project-summary
 - **Infer:** A key concept in this project
 - **Knowledge:** A key concept in this project, related to knowledge-transfer
@@ -118,12 +154,14 @@ The project includes code in the following languages:
 - **Questionnaire:** A key concept in this project
 - **Documentation:** A key concept in this project
 - **Network:** A key concept in this project
+- **Format:** A key concept in this project
 - **File:** A key concept in this project
+- **Parse:** A key concept in this project
 - **Code-analysis:** A key concept in this project
 - **Extract:** A key concept in this project
-- **Semantics:** A key concept in this project, related to semantic
+- **From:** A key concept in this project
+- **Semantics:** A key concept in this project
 - **Visualization:** A key concept in this project
-- **Mermaid:** A key concept in this project
 
 ### Key Assumptions
 
@@ -159,13 +197,13 @@ The project includes code in the following languages:
 
 The codebase revolves around these primary concepts and their relationships:
 
-- **const**: related to analysis, file
+- **const**: related to analysis, project
 - **analysis**: related to project, edge
-- **file**: related to project, int
-- **content**: related to analysis, project
-- **project**: related to analysis, file
-- **name**: related to project, path
-- **path**: related to dir, s w
+- **project**: related to file, doc
+- **file**: related to doc, project
+- **content**: related to doc, ext
+- **path**: related to dir, project
+- **test**: related to analysis, project
 
 ### Enhanced Terminology
 
@@ -175,28 +213,28 @@ These terms have specific meanings in the project context:
         ];
 
         const patterns = [
-            '* (related to: analysis, file, project, files, dir)
-- **analysis:** Get analysis results (related to: project, edge, ext, file, document)
-- **file:** Important files (related to: project, int, s s, analysis, base)
-- **content:** Check README content (related to: analysis, project, ext, document, edge)
-- **project:** Clean up test project (related to: analysis, file, edge, ext, base)
-- **name:** Add class names (related to: project, path, dir, s w, e e)
-- **path:** Determine paths (related to: dir, s w, e e, file, project)
+            '* (related to: analysis, project, file, files, dir)
+- **analysis:** Get analysis results (related to: project, edge, file, document, knowledge)
+- **project:** Clean up test project (related to: file, doc, ext, analysis, document)
+- **file:** Important files (related to: doc, project, int, ext, pos)
+- **content:** Check README content (related to: doc, ext, s s, project, file)
+- **path:** Determine paths (related to: dir, project, file, name, n s)
 - **test:** Check for testing (related to: analysis, project, document, edge, doc)
+- **name:** Add class names (related to: project, dir, file, path, doc)
 
 ### Conceptual Distribution
 
 Key concepts are distributed across the codebase as follows:
 
-- **project** appears in 19 files, including:
-  - `CHANGELOG.md`
-  - `README.md`
-  - *(and 17 more)*
-- **analysis** appears in 17 files, including:
-  - `CHANGELOG.md`
-  - `README.md`
-  - *(and 15 more)*
-- **file** appears in 16 files, including:
+- **file** appears in 35 files, including:
   - `CHANGELOG.md`
   - `LICENSE.md`
-  - *(and 14 more)*
+  - *(and 33 more)*
+- **project** appears in 33 files, including:
+  - `CHANGELOG.md`
+  - `README.md`
+  - *(and 31 more)*
+- **document** appears in 28 files, including:
+  - `CHANGELOG.md`
+  - `LICENSE.md`
+  - *(and 26 more)*
