@@ -1,0 +1,229 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #3182ce;
+  --ifm-color-primary-dark: #2b6cb0;
+  --ifm-color-primary-darker: #2c5282;
+  --ifm-color-primary-darkest: #2a4365;
+  --ifm-color-primary-light: #4299e1;
+  --ifm-color-primary-lighter: #63b3ed;
+  --ifm-color-primary-lightest: #90cdf4;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #4299e1;
+  --ifm-color-primary-dark: #3182ce;
+  --ifm-color-primary-darker: #2b6cb0;
+  --ifm-color-primary-darkest: #2c5282;
+  --ifm-color-primary-light: #63b3ed;
+  --ifm-color-primary-lighter: #90cdf4;
+  --ifm-color-primary-lightest: #bee3f8;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom styles for the documentation */
+
+/* Hero section on homepage */
+.hero {
+  padding: 4rem 0;
+}
+
+.hero__title {
+  font-size: 3rem;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+}
+
+/* Feature section on homepage */
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+
+/* Card styles for features */
+.card {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Admonitions (callouts) */
+.alert {
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+/* Better table styles */
+table {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-bottom: 1.5rem;
+}
+
+table thead tr {
+  border-bottom: 2px solid var(--ifm-table-border-color);
+}
+
+table th {
+  font-weight: var(--ifm-font-weight-bold);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--ifm-table-border-color);
+}
+
+/* Code blocks */
+pre {
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+/* API documentation styling */
+.api-method {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.api-method__badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+.api-method__badge--get {
+  background-color: #4299e1;
+  color: white;
+}
+
+.api-method__badge--post {
+  background-color: #48bb78;
+  color: white;
+}
+
+.api-method__badge--put {
+  background-color: #ed8936;
+  color: white;
+}
+
+.api-method__badge--delete {
+  background-color: #f56565;
+  color: white;
+}
+
+/* Mermaid diagrams */
+.mermaid {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+/* Tabs component */
+.tabs {
+  margin-bottom: 1.5rem;
+}
+
+.tabs__item {
+  padding: 0.75rem 1rem;
+}
+
+.tabs__item--active {
+  border-bottom-width: 3px;
+}
+
+/* Pagination nav */
+.pagination-nav {
+  margin: 2rem 0;
+}
+
+.pagination-nav__link {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.pagination-nav__link:hover {
+  transform: translateY(-2px);
+}
+
+/* Custom button styles */
+.button {
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.button--primary {
+  background-color: var(--ifm-color-primary);
+  color: white;
+}
+
+.button--secondary {
+  background-color: var(--ifm-color-secondary);
+}
+
+/* Code tabs */
+.code-tabs .tabs__item {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.9rem;
+}
+
+/* Version dropdown */
+.dropdown__menu {
+  min-width: 12rem;
+}
+
+/* Search bar */
+.navbar__search {
+  margin-left: 1rem;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 996px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+  
+  .hero__subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .featureSvg {
+    height: 150px;
+    width: 150px;
+  }
+}

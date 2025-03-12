@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="200" fill="transparent"/>
+  
+  <!-- Concept network nodes and connections -->
+  <!-- Node 1 (center) -->
+  <circle cx="100" cy="100" r="18" fill="#3182CE"/>
+  <text x="100" y="105" font-family="Arial" font-size="10" fill="white" text-anchor="middle">Project</text>
+  
+  <!-- Node 2 -->
+  <circle cx="50" cy="70" r="14" fill="#4299E1"/>
+  <text x="50" y="74" font-family="Arial" font-size="8" fill="white" text-anchor="middle">API</text>
+  
+  <!-- Node 3 -->
+  <circle cx="150" cy="70" r="14" fill="#4299E1"/>
+  <text x="150" y="74" font-family="Arial" font-size="8" fill="white" text-anchor="middle">Config</text>
+  
+  <!-- Node 4 -->
+  <circle cx="55" cy="140" r="14" fill="#4299E1"/>
+  <text x="55" y="144" font-family="Arial" font-size="8" fill="white" text-anchor="middle">Data</text>
+  
+  <!-- Node 5 -->
+  <circle cx="150" cy="140" r="14" fill="#4299E1"/>
+  <text x="150" y="144" font-family="Arial" font-size="8" fill="white" text-anchor="middle">File</text>
+  
+  <!-- Node 6 -->
+  <circle cx="100" cy="45" r="12" fill="#63B3ED"/>
+  <text x="100" y="48" font-family="Arial" font-size="7" fill="white" text-anchor="middle">Auth</text>
+  
+  <!-- Node 7 -->
+  <circle cx="35" cy="100" r="12" fill="#63B3ED"/>
+  <text x="35" y="103" font-family="Arial" font-size="7" fill="white" text-anchor="middle">Query</text>
+  
+  <!-- Node 8 -->
+  <circle cx="165" cy="100" r="12" fill="#63B3ED"/>
+  <text x="165" y="103" font-family="Arial" font-size="7" fill="white" text-anchor="middle">Logger</text>
+  
+  <!-- Node 9 -->
+  <circle cx="100" cy="155" r="12" fill="#63B3ED"/>
+  <text x="100" y="158" font-family="Arial" font-size="7" fill="white" text-anchor="middle">Model</text>
+  
+  <!-- Connection lines -->
+  <line x1="100" y1="100" x2="50" y2="70" stroke="#A0AEC0" stroke-width="2"/>
+  <line x1="100" y1="100" x2="150" y2="70" stroke="#A0AEC0" stroke-width="2"/>
+  <line x1="100" y1="100" x2="55" y2="140" stroke="#A0AEC0" stroke-width="2"/>
+  <line x1="100" y1="100" x2="150" y2="140" stroke="#A0AEC0" stroke-width="2"/>
+  <line x1="100" y1="100" x2="100" y2="45" stroke="#A0AEC0" stroke-width="1.5"/>
+  <line x1="100" y1="100" x2="35" y2="100" stroke="#A0AEC0" stroke-width="1.5"/>
+  <line x1="100" y1="100" x2="165" y2="100" stroke="#A0AEC0" stroke-width="1.5"/>
+  <line x1="100" y1="100" x2="100" y2="155" stroke="#A0AEC0" stroke-width="1.5"/>
+  <line x1="50" y1="70" x2="100" y2="45" stroke="#A0AEC0" stroke-width="1"/>
+  <line x1="150" y1="70" x2="165" y2="100" stroke="#A0AEC0" stroke-width="1"/>
+  <line x1="55" y1="140" x2="100" y2="155" stroke="#A0AEC0" stroke-width="1"/>
+  <line x1="150" y1="140" x2="100" y2="155" stroke="#A0AEC0" stroke-width="1"/>
+  
+  <!-- Brain outline -->
+  <path d="M45,30 C20,50 20,80 30,110 C35,130 55,145 70,150 C85,155 115,155 130,150 C145,145 165,130 170,110 C180,80 180,50 155,30 C140,20 120,20 100,35 C80,20 60,20 45,30" 
+        fill="none" stroke="#3182CE" stroke-width="2" opacity="0.3"/>
+</svg>
