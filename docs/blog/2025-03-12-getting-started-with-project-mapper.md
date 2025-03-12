@@ -55,6 +55,8 @@ docs-website/
 
 ## Key Files and Their Purposes
 
+<!--truncate -->
+
 ### Configuration Files
 
 - **docusaurus.config.js**: Main configuration for the Docusaurus site

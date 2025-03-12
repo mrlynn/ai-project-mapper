@@ -14,6 +14,7 @@ As part of my job as a Developer Advocate at Mongodb, I'm painfully aware of the
 ## The Context Problem
 
 The tools I've mentioned and the LLMs upon which they depend have limits when it comes to their context window... the amount of text they can see and understand at one time. Despite many of the recent improvements that have expanded context windows, they still can't ingest and fully understand entire large codebases, particularly for medium to large projects. When you attempt to work with an LLM on an existing project, you'll likely run into these challenges:
+<!--truncate -->
 
 1. **Token limitations**: Only a fraction of your codebase can be shared at once.
 2. **Fragmented understanding**: Sharing individual files without context results in a disjointed understanding.
