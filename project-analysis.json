@@ -1,0 +1,430 @@
+{
+  "overview": {
+    "name": "project-mapper",
+    "description": "Generate LLM-friendly project summaries to help AI assistants understand your codebase",
+    "version": "0.2.0",
+    "totalFiles": 24,
+    "totalDirectories": 4,
+    "filesByType": {
+      "javascript": [
+        "debug-cli.js",
+        "memory-wrapper.js",
+        "src/analyzer.js",
+        "src/cli.js",
+        "src/index.js",
+        "src/knowledge-transfer-enhanced.js",
+        "src/knowledge-transfer.js",
+        "src/semantic-analyzer.js",
+        "src/visualization.js",
+        "bin/project-mapper.js"
+      ],
+      "typescript": [],
+      "html": [],
+      "css": [],
+      "json": [
+        "package.json",
+        "project-analysis.json"
+      ],
+      "markdown": [
+        "CHANGELOG.md",
+        "LICENSE.md",
+        "README.md",
+        "codebase.md",
+        "debug-questionnaire.md",
+        "project-knowledge-transfer.md"
+      ],
+      "python": [],
+      "ruby": [],
+      "java": [],
+      "csharp": [],
+      "php": [],
+      "golang": [],
+      "rust": [],
+      "shell": [
+        "publish-guide.sh"
+      ],
+      "yaml": [
+        ".github/workflows/test.yml"
+      ],
+      "xml": [],
+      "sql": []
+    },
+    "mainDirectories": [
+      {
+        "path": ".",
+        "fileCount": 15
+      },
+      {
+        "path": "src",
+        "fileCount": 7
+      }
+    ]
+  },
+  "package": {
+    "dependencies": {
+      "acorn": "^8.8.2",
+      "acorn-walk": "^8.2.0",
+      "chalk": "^5.2.0",
+      "commander": "^10.0.0",
+      "fast-glob": "^3.2.12",
+      "markdown-table": "^3.0.3",
+      "natural": "^8.0.1",
+      "ora": "^6.3.0",
+      "prettier": "^2.8.8",
+      "d3": "^7.8.4",
+      "inquirer": "^9.1.5"
+    },
+    "devDependencies": {
+      "express": "^4.18.2",
+      "fs-extra": "^11.3.0"
+    },
+    "scripts": {
+      "start": "node --max-old-space-size=8192 src/cli.js",
+      "test": "node --test test/**/*.{test.js,test.cjs}",
+      "prepare": "mkdir -p bin && chmod +x src/cli.js bin/project-mapper.js",
+      "prepublishOnly": "npm test"
+    },
+    "main": "src/index.js",
+    "bin": {
+      "project-mapper": "bin/project-mapper.js"
+    },
+    "type": "module"
+  },
+  "structure": {
+    "entryPoints": [
+      {
+        "path": "src/index.js",
+        "type": "main",
+        "description": "Main entry point from package.json"
+      },
+      {
+        "path": "bin/project-mapper.js",
+        "type": "bin",
+        "description": "Binary entry point 'project-mapper' from package.json"
+      },
+      {
+        "path": "src/cli.js",
+        "type": "convention",
+        "description": "Conventional entry point file"
+      }
+    ],
+    "importantFiles": [
+      {
+        "path": "src/knowledge-transfer.js",
+        "score": 86
+      },
+      {
+        "path": "src/index.js",
+        "score": 82.92
+      },
+      {
+        "path": "src/cli.js",
+        "score": 56.64
+      },
+      {
+        "path": "src/analyzer.js",
+        "score": 54
+      },
+      {
+        "path": "bin/project-mapper.js",
+        "score": 50.8
+      },
+      {
+        "path": "src/semantic-analyzer.js",
+        "score": 42
+      },
+      {
+        "path": "src/visualization.js",
+        "score": 34
+      },
+      {
+        "path": "src/knowledge-transfer-enhanced.js",
+        "score": 32.32
+      },
+      {
+        "path": "debug-cli.js",
+        "score": 5.22
+      },
+      {
+        "path": "memory-wrapper.js",
+        "score": 1.04
+      }
+    ],
+    "dependencyGraph": {
+      "debug-cli.js": {
+        "imports": [
+          "src/analyzer.js",
+          "src/knowledge-transfer.js",
+          "src/semantic-analyzer.js",
+          "src/knowledge-transfer-enhanced.js"
+        ],
+        "importedBy": []
+      },
+      "memory-wrapper.js": {
+        "imports": [],
+        "importedBy": []
+      },
+      "src/analyzer.js": {
+        "imports": [],
+        "importedBy": [
+          "debug-cli.js",
+          "src/cli.js",
+          "src/index.js"
+        ]
+      },
+      "src/cli.js": {
+        "imports": [
+          "src/analyzer.js",
+          "src/knowledge-transfer-enhanced.js",
+          "src/semantic-analyzer.js"
+        ],
+        "importedBy": []
+      },
+      "src/index.js": {
+        "imports": [
+          "src/analyzer.js",
+          "src/knowledge-transfer.js"
+        ],
+        "importedBy": []
+      },
+      "src/knowledge-transfer-enhanced.js": {
+        "imports": [
+          "src/semantic-analyzer.js",
+          "src/knowledge-transfer.js"
+        ],
+        "importedBy": [
+          "debug-cli.js",
+          "src/cli.js"
+        ]
+      },
+      "src/knowledge-transfer.js": {
+        "imports": [],
+        "importedBy": [
+          "debug-cli.js",
+          "src/index.js",
+          "src/knowledge-transfer-enhanced.js"
+        ]
+      },
+      "src/semantic-analyzer.js": {
+        "imports": [],
+        "importedBy": [
+          "debug-cli.js",
+          "src/cli.js",
+          "src/knowledge-transfer-enhanced.js"
+        ]
+      },
+      "src/visualization.js": {
+        "imports": [],
+        "importedBy": []
+      },
+      "bin/project-mapper.js": {
+        "imports": [],
+        "importedBy": []
+      }
+    }
+  },
+  "concepts": {
+    "modules": [
+      {
+        "name": "src",
+        "fileCount": 7,
+        "exports": 22,
+        "functions": 56,
+        "classes": 1,
+        "mainExports": [
+          "analyzeProject",
+          "generateProjectMap",
+          "analyzeProject",
+          "generateKnowledgeTransfer",
+          "analyzeProjectSemantics"
+        ]
+      }
+    ],
+    "utilities": [
+      {
+        "path": "src/analyzer.js",
+        "exports": [
+          "analyzeProject"
+        ]
+      },
+      {
+        "path": "src/knowledge-transfer-enhanced.js",
+        "exports": [
+          "enhancedKnowledgeTransfer",
+          "generateContextQuestionnaire",
+          "generateQuestionnaireForm"
+        ]
+      },
+      {
+        "path": "src/knowledge-transfer.js",
+        "exports": [
+          "generateKnowledgeTransfer"
+        ]
+      },
+      {
+        "path": "src/visualization.js",
+        "exports": [
+          "generateConceptNetworkVisualization",
+          "exportInteractiveConceptNetwork",
+          "generateMermaidConceptDiagram",
+          "generateConceptDistributionHeatmap"
+        ]
+      }
+    ],
+    "dataStructures": [
+      {
+        "path": "src/semantic-analyzer.js",
+        "classes": [
+          "SemanticCodeAnalyzer"
+        ]
+      }
+    ],
+    "keywords": [
+      "generate",
+      "concept",
+      "analyze",
+      "project",
+      "infer",
+      "knowledge",
+      "transfer",
+      "questionnaire",
+      "documentation",
+      "network",
+      "file",
+      "code-analysis",
+      "project-summary",
+      "knowledge-transfer",
+      "extract",
+      "semantics",
+      "mermaid",
+      "semantic",
+      "analyzer",
+      "format"
+    ]
+  },
+  "fileStats": {
+    "totalSize": 404980,
+    "largestFiles": [
+      {
+        "path": "codebase.md",
+        "size": 193450
+      },
+      {
+        "path": "src/knowledge-transfer.js",
+        "size": 47158
+      },
+      {
+        "path": "project-mapper-0.1.0.tgz",
+        "size": 36835
+      },
+      {
+        "path": "src/analyzer.js",
+        "size": 24882
+      },
+      {
+        "path": "src/semantic-analyzer.js",
+        "size": 23692
+      },
+      {
+        "path": "src/visualization.js",
+        "size": 14055
+      },
+      {
+        "path": "README.md",
+        "size": 10991
+      },
+      {
+        "path": "src/knowledge-transfer-enhanced.js",
+        "size": 10490
+      },
+      {
+        "path": "project-analysis.json",
+        "size": 9757
+      },
+      {
+        "path": "src/cli.js",
+        "size": 8888
+      }
+    ],
+    "extensionCounts": {
+      "no-extension": 3,
+      ".md": 6,
+      ".js": 10,
+      ".json": 2,
+      ".tgz": 1,
+      ".sh": 1,
+      ".yml": 1
+    },
+    "languages": {
+      "Markdown": {
+        "files": 6,
+        "size": 212754
+      },
+      "JavaScript": {
+        "files": 10,
+        "size": 135779
+      },
+      "JSON": {
+        "files": 2,
+        "size": 11224
+      },
+      "Shell": {
+        "files": 1,
+        "size": 1406
+      },
+      "YAML": {
+        "files": 1,
+        "size": 496
+      }
+    }
+  },
+  "documentation": [
+    {
+      "path": "README.md",
+      "size": 10989,
+      "headings": [
+        {
+          "level": 1,
+          "text": "Project Mapper"
+        },
+        {
+          "level": 2,
+          "text": "Overview"
+        },
+        {
+          "level": 3,
+          "text": "Why Project Mapper?"
+        },
+        {
+          "level": 2,
+          "text": "Installation"
+        },
+        {
+          "level": 1,
+          "text": "Install globally"
+        },
+        {
+          "level": 1,
+          "text": "Or use with npx without installing"
+        },
+        {
+          "level": 2,
+          "text": "Quick Start"
+        },
+        {
+          "level": 1,
+          "text": "1. Navigate to your project"
+        },
+        {
+          "level": 1,
+          "text": "2. Generate a knowledge transfer document"
+        },
+        {
+          "level": 1,
+          "text": "3. Share the generated document with your LLM"
+        }
+      ],
+      "preview": "# Project Mapper\n\n![Project Mapper Banner](https://img.shields.io/badge/Project%20Mapper-LLM--Friendly%20Code%20Analysis-blue)\n\nGenerate LLM-friendly project summaries to help AI assistants understand your codebase.\n\n[![npm version](https://img.shields.io/badge/npm-v0.1.0-blue.svg)](https://www.npmjs.com/package/project-mapper)\n[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n[![Node.js Version](https://img.shields.io/badge/node-%3E%3D16"
+    }
+  ]
+}

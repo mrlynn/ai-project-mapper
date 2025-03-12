@@ -5,10 +5,10 @@
   "type": "module",
   "main": "src/index.js",
   "bin": {
-    "project-mapper": "src/cli.js"
+    "project-mapper": "bin/project-mapper.js"
   },
   "scripts": {
-    "start": "node --max-old-space-size=4096 src/cli.js",
+    "start": "node --max-old-space-size=8192 src/cli.js",
     "test": "node --test test/**/*.{test.js,test.cjs}",
     "prepare": "mkdir -p bin && chmod +x src/cli.js bin/project-mapper.js",
     "prepublishOnly": "npm test"
@@ -36,6 +36,7 @@
   },
   "files": [
     "src/",
+    "bin/",
     "README.md",
     "LICENSE"
   ],

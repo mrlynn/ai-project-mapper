@@ -1,0 +1,18 @@
+# Development files
+.github/
+test/
+.eslintrc*
+.prettier*
+.editorconfig
+.gitignore
+.git/
+
+# Output files that might be in the project directory
+project-analysis.json
+project-knowledge-transfer.md
+
+# Misc
+node_modules/
+npm-debug.log
+yarn-error.log
+*.tgz
