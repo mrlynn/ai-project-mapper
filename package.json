@@ -44,7 +44,7 @@
     "acorn": "^8.8.2",
     "acorn-walk": "^8.2.0",
     "chalk": "^5.2.0",
-    "commander": "^10.0.0",
+    "commander": "^13.0.0",
     "fast-glob": "^3.2.12",
     "markdown-table": "^3.0.3",
     "natural": "^8.0.1",
