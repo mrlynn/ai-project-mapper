@@ -1,3 +1,12 @@
+---
+title: Getting Started with Project Mapper
+author: Michael Lynn
+author_title: Developer Advocate @ MongoDB
+author_url: https://github.com/mrlynn
+author_image_url: https://avatars.githubusercontent.com/u/192552?v=4
+tags: [ai, llm, development, blog]
+---
+
 # Project Structure for Project Mapper Documentation
 
 Here's the complete structure for the Docusaurus documentation site:
