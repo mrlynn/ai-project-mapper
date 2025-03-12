@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Project Structure for Project Mapper Documentation","permalink":"/ai-project-mapper/blog/2025/03/12/getting-started-with-project-mapper","unlisted":false,"date":"2025-03-12T00:00:00.000Z"}]}')}}]);
