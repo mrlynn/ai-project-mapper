@@ -8,6 +8,10 @@ Generate LLM-friendly project summaries to help AI assistants understand your co
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen.svg)](https://nodejs.org/)
 [![Documentation](https://img.shields.io/badge/docs-online-informational.svg)](https://mrlynn.github.io/ai-project-mapper)
+[![Build Status](https://github.com/mrlynn/ai-project-mapper/actions/workflows/test.yml/badge.svg)](https://github.com/mrlynn/ai-project-mapper/actions/workflows/test.yml)
+[![Coverage Status](https://img.shields.io/codecov/c/github/mrlynn/ai-project-mapper/main.svg)](https://codecov.io/gh/mrlynn/ai-project-mapper)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/mrlynn/ai-project-mapper/graphs/commit-activity)
+[![Downloads](https://img.shields.io/npm/dm/project-mapper.svg)](https://www.npmjs.com/package/project-mapper)
 
 ## Overview
 
