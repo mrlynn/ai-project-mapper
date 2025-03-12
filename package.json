@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node --max-old-space-size=8192 src/cli.js",
-    "test": "node --test test/**/*.{test.js,test.cjs}",
+    "test": "node --test",
     "prepare": "mkdir -p bin && chmod +x src/cli.js bin/project-mapper.js",
     "prepublishOnly": "npm test"
   },
