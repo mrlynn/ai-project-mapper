@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://your-docusaurus-site.example.com/blog</id>
+    <title>Project Mapper Blog</title>
+    <updated>2025-03-12T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://your-docusaurus-site.example.com/blog"/>
+    <subtitle>Project Mapper Blog</subtitle>
+    <icon>https://your-docusaurus-site.example.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Project Structure for Project Mapper Documentation]]></title>
+        <id>https://your-docusaurus-site.example.com/blog/2025/03/12/getting-started-with-project-mapper</id>
+        <link href="https://your-docusaurus-site.example.com/blog/2025/03/12/getting-started-with-project-mapper"/>
+        <updated>2025-03-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Here's the complete structure for the Docusaurus documentation site:]]></summary>
+        <content type="html"><![CDATA[<p>Here's the complete structure for the Docusaurus documentation site:</p>
+<div class="codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">docs-website/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── blog/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   └── 2025-03-12-getting-started-with-project-mapper.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── docs/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── intro.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── getting-started.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── guides/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   │   ├── basic-usage.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   │   ├── templates.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   │   ├── customization.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   │   └── llm-workflow.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── api/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   │   └── api-reference.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── concepts/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   │   ├── architecture.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   │   └── terminology.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   └── examples/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│       ├── cli-examples.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│       └── api-examples.md</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── src/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── components/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   │   └── HomepageFeatures/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   │       ├── index.js</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   │       └── styles.module.css</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   ├── css/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   │   └── custom.css</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   └── pages/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│       ├── index.js</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│       └── index.module.css</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── static/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│   └── img/</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│       ├── logo.svg</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│       ├── feature-summary.svg</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│       ├── feature-semantic.svg</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│       ├── feature-llm.svg</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">│       └── project-mapper-social-card.jpg</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── docusaurus.config.js</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">├── package.json</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">└── sidebars.js</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-files-and-their-purposes">Key Files and Their Purposes<a href="https://your-docusaurus-site.example.com/blog/2025/03/12/getting-started-with-project-mapper#key-files-and-their-purposes" class="hash-link" aria-label="Direct link to Key Files and Their Purposes" title="Direct link to Key Files and Their Purposes">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configuration-files">Configuration Files<a href="https://your-docusaurus-site.example.com/blog/2025/03/12/getting-started-with-project-mapper#configuration-files" class="hash-link" aria-label="Direct link to Configuration Files" title="Direct link to Configuration Files">​</a></h3>
+<ul>
+<li><strong>docusaurus.config.js</strong>: Main configuration for the Docusaurus site</li>
+<li><strong>sidebars.js</strong>: Configures the documentation sidebar navigation</li>
+<li><strong>package.json</strong>: Dependencies and scripts for the project</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="documentation-content">Documentation Content<a href="https://your-docusaurus-site.example.com/blog/2025/03/12/getting-started-with-project-mapper#documentation-content" class="hash-link" aria-label="Direct link to Documentation Content" title="Direct link to Documentation Content">​</a></h3>
+<ul>
+<li><strong>docs/intro.md</strong>: Main landing page for the documentation</li>
+<li><strong>docs/getting-started.md</strong>: Installation and quick start guide</li>
+<li><strong>docs/guides/</strong>: Directory containing detailed guides</li>
+<li><strong>docs/api/</strong>: Directory containing API documentation</li>
+<li><strong>docs/concepts/</strong>: Directory containing conceptual explanations</li>
+<li><strong>docs/examples/</strong>: Directory containing practical examples</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="react-components">React Components<a href="https://your-docusaurus-site.example.com/blog/2025/03/12/getting-started-with-project-mapper#react-components" class="hash-link" aria-label="Direct link to React Components" title="Direct link to React Components">​</a></h3>
+<ul>
+<li><strong>src/pages/index.js</strong>: Homepage for the documentation site</li>
+<li><strong>src/components/HomepageFeatures/</strong>: Component for the feature section on the homepage</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="styling">Styling<a href="https://your-docusaurus-site.example.com/blog/2025/03/12/getting-started-with-project-mapper#styling" class="hash-link" aria-label="Direct link to Styling" title="Direct link to Styling">​</a></h3>
+<ul>
+<li><strong>src/css/custom.css</strong>: Global CSS customizations</li>
+<li><strong>src/pages/index.module.css</strong>: CSS modules specific to the homepage</li>
+<li><strong>src/components/HomepageFeatures/styles.module.css</strong>: CSS modules for the features component</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="assets">Assets<a href="https://your-docusaurus-site.example.com/blog/2025/03/12/getting-started-with-project-mapper#assets" class="hash-link" aria-label="Direct link to Assets" title="Direct link to Assets">​</a></h3>
+<ul>
+<li><strong>static/img/logo.svg</strong>: Project logo</li>
+<li><strong>static/img/feature-*.svg</strong>: SVG illustrations for features</li>
+<li><strong>static/img/project-mapper-social-card.jpg</strong>: Social media preview image</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="blog-posts">Blog Posts<a href="https://your-docusaurus-site.example.com/blog/2025/03/12/getting-started-with-project-mapper#blog-posts" class="hash-link" aria-label="Direct link to Blog Posts" title="Direct link to Blog Posts">​</a></h3>
+<ul>
+<li><strong>blog/2025-03-12-getting-started-with-project-mapper.md</strong>: Introduction blog post</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="building-and-deploying">Building and Deploying<a href="https://your-docusaurus-site.example.com/blog/2025/03/12/getting-started-with-project-mapper#building-and-deploying" class="hash-link" aria-label="Direct link to Building and Deploying" title="Direct link to Building and Deploying">​</a></h2>
+<p>To build the documentation site:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token comment" style="color:#999988;font-style:italic"># Navigate to the Docusaurus project</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token builtin class-name">cd</span><span class="token plain"> docs-website</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># Install dependencies</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token function" style="color:#d73a49">npm</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">install</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># Start the development server</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token function" style="color:#d73a49">npm</span><span class="token plain"> run start</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token comment" style="color:#999988;font-style:italic"># Build for production</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token function" style="color:#d73a49">npm</span><span class="token plain"> run build</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+<p>The built site will be in the <code>build</code> directory, ready to deploy to any static hosting service.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="next-steps">Next Steps<a href="https://your-docusaurus-site.example.com/blog/2025/03/12/getting-started-with-project-mapper#next-steps" class="hash-link" aria-label="Direct link to Next Steps" title="Direct link to Next Steps">​</a></h2>
+<p>After setting up the basic structure:</p>
+<ol>
+<li>Fill in any missing content in the documentation files</li>
+<li>Customize the styling to match your brand</li>
+<li>Add more blog posts as the project evolves</li>
+<li>Set up a deployment pipeline to automatically publish updates</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="additional-customization">Additional Customization<a href="https://your-docusaurus-site.example.com/blog/2025/03/12/getting-started-with-project-mapper#additional-customization" class="hash-link" aria-label="Direct link to Additional Customization" title="Direct link to Additional Customization">​</a></h2>
+<ul>
+<li>Add search functionality using Algolia DocSearch</li>
+<li>Configure versioning when you release new versions</li>
+<li>Add internationalization for multi-language support</li>
+<li>Add more interactive components like code playgrounds</li>
+</ul>]]></content>
+    </entry>
+</feed>
